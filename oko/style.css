@@ -1,0 +1,343 @@
+:root {
+    --black: #151a18;
+    --black-soft: #202824;
+    --emerald: #00c995;
+    --emerald-dark: #009f75;
+    --diamond: #b8e8f3;
+    --diamond-soft: #d9f4fa;
+    --white: #ffffff;
+    --text-dark: #10251f;
+    --text-light: #eafff8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: var(--black);
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--text-dark);
+
+}
+
+.website-container {
+    width: 100%;
+    max-width: 520px;
+    height: 100vh;
+    height: 100dvh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--diamond);
+    border-left: 10px solid var(--black);
+    border-right: 10px solid var(--black);
+}
+
+
+.header {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--emerald);
+}
+
+.profile-image {
+    width: 100%;
+    height: 245px;
+    overflow: hidden;
+    background-color: #8ad8ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+.profile-name {
+    width: 100%;
+    padding: 8px 0 3px;
+    text-align: center;
+}
+
+.profile-name h1 {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.header-navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 0 10px;
+}
+
+.header-navigation a,
+.header-navigation button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--black);
+    font-size: 21px;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.header-navigation a:hover,
+.header-navigation button:hover {
+    transform: translateY(-3px);
+    color: var(--white);
+}
+
+.main-content {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--diamond);
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--emerald) var(--diamond);
+}
+
+.main-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background-color: var(--diamond);
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: var(--emerald);
+    border-radius: 10px;
+}
+
+.content-section {
+    width: 100%;
+    min-height: 100%;
+    padding: 30px 27px;
+    scroll-margin-top: 15px;
+}
+
+#home {
+    background-color: var(--diamond);
+}
+
+#profile {
+    background-color: var(--diamond);
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.9;
+    color: var(--text-dark);
+}
+
+.scroll-information {
+    margin-top: 45px;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+#social-media {
+    width: 100%;
+    min-height: auto;
+    padding: 35px 20px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    scroll-margin-top: 15px;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: transparent;
+}
+
+.social-media a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark);
+    font-size: 24px;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.social-media a:hover {
+    transform: translateY(-5px);
+    color: var(--emerald-dark);
+
+}
+
+iconify-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    color: inherit;
+}
+
+.header-navigation iconify-icon {
+    font-size: 22px;
+}
+
+.social-media iconify-icon {
+    font-size: 24px;
+}
+
+.footer-contact iconify-icon {
+    font-size: 17px;
+}
+
+.footer {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--emerald);
+}
+
+.footer-contact {
+    width: 100%;
+    min-height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 5px;
+    background-color: var(--emerald);
+    border-top: 7px solid var(--diamond);
+    border-radius: 22px 22px 0 0;
+}
+
+.footer-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    font-size: 17px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.footer-contact a:hover {
+    transform: translateY(-3px);
+    color: var(--white);
+}
+
+.footer-contact p {
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .website-container {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 360px) {
+    .website-container {
+        border-left-width: 6px;
+        border-right-width: 6px;
+    }
+
+    .profile-image {
+        height: 220px;
+    }
+
+    .profile-name h1 {
+        font-size: 19px;
+    }
+
+    .header-navigation {
+        gap: 15px;
+    }
+
+    .introduction {
+        font-size: 15px;
+
+    }
+
+    .social-media {
+        gap: 15px;
+
+    }
+
+}
+
+
+@media (max-height: 600px) {
+    .profile-image {
+        height: 160px;
+    }
+
+    .content-section {
+        padding-top: 20px;
+    }
+
+    .header-navigation {
+        padding-bottom: 6px;
+    }
+
+}
