@@ -8,7 +8,7 @@
       name="description"
       content="Selamat datang di dunia kecil 0tokodayo."
     />
-    <title>0tokodayo — Dunia Kecilku</title>
+    <title>0tokodayo</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
   </head>
+
   <body>
     <div class="ambient ambient-one"></div>
     <div class="ambient ambient-two"></div>
@@ -25,9 +27,8 @@
     <header class="navbar">
       <a href="#home" class="logo" aria-label="0tokodayo, beranda">
         <span class="logo-photo">
-          <img src="logo.png" alt="Logo 0tokodayo" id="logoImage" />
+          <img src="1.png" alt="Logo 0tokodayo" id="logoImage" />
         </span>
-        <span class="logo-name">0tokodayo<span>.</span></span>
       </a>
 
       <button
@@ -42,10 +43,25 @@
       </button>
 
       <nav class="nav-menu" id="mainNav" aria-label="Navigasi utama">
-        <a href="#home" class="active"><span>⌂</span> Beranda</a>
-        <a href="#about"><span>◉</span> Tentang</a>
-        <a href="#socials"><span>✧</span> Sosial</a>
-        <a href="#contact"><span>✉</span> Kontak</a>
+        <a href="#home" class="active">
+          <iconify-icon icon="lucide:house"></iconify-icon>
+          Beranda
+        </a>
+
+        <a href="#about">
+          <iconify-icon icon="lucide:user-round"></iconify-icon>
+          Tentang
+        </a>
+
+        <a href="#socials">
+          <iconify-icon icon="lucide:share-2"></iconify-icon>
+          Sosial
+        </a>
+
+        <a href="#contact">
+          <iconify-icon icon="lucide:mail"></iconify-icon>
+          Kontak
+        </a>
       </nav>
 
       <button
@@ -55,7 +71,7 @@
         aria-label="Ganti tema"
         title="Ganti tema"
       >
-        ☼
+        <iconify-icon icon="lucide:sun"></iconify-icon>
       </button>
     </header>
 
@@ -63,24 +79,20 @@
       <section class="hero" id="home">
         <div class="hero-content reveal">
           <div class="availability">
-            <span class="status-dot"></span> Selamat datang di dunia kecilku
+            <span class="status-dot"></span> Watashi no sekai e yōkoso
           </div>
-          <p class="greeting">やっほー、みんな！</p>
-          <h1>
-            Halo, saya <span>0tokodayo</span>.<br /><em
-              >Selamat datang di duniaku.</em
-            >
-          </h1>
+          <p class="greeting">Yahhō, minna!</p>
+          <h1>Saya <span>0tokodayo</span>.<br /></h1>
+
           <p class="description">
-            Sebuah sudut kecil di internet untuk berbagi pemikiran, kreativitas,
-            cerita, dan hal-hal sederhana yang membentuk diri saya.
+            Seorang anime lovers yang sedang belajar untuk menjadi penulis.
+            Sebuah hobi sederhana yang memberikan peluang untuk berbagi
+            pemikiran, kreativitas, cerita, dan hal-hal yang sulit di ucapkan
+            menjadi mudah.
           </p>
           <div class="hero-buttons">
-            <a href="#about" class="btn-primary">Kenali saya <span>↗</span></a>
+            <a href="#about" class="btn-primary">Kenali saya <span><iconify-icon icon="lucide:arrow-up-right"></iconify-icon></span></a>
             <a href="#socials" class="btn-secondary">Temukan media sosial</a>
-          </div>
-          <div class="hero-note">
-            <span>✦</span> DIBUAT DENGAN RASA INGIN TAHU
           </div>
         </div>
 
@@ -173,22 +185,30 @@
           </div>
           <div class="interest-grid">
             <article class="interest-card reveal">
-              <span class="interest-icon">✦</span>
+              <span class="interest-icon">
+                <iconify-icon icon="lucide:palette"></iconify-icon>
+              </span>
               <h4>Desain Kreatif</h4>
               <p>Mengeksplorasi ide visual, estetika, dan ekspresi kreatif.</p>
             </article>
             <article class="interest-card reveal">
-              <span class="interest-icon">✎</span>
+              <span class="interest-icon">
+                <iconify-icon icon="lucide:pen-line"></iconify-icon>
+              </span>
               <h4>Menulis</h4>
               <p>Mengubah pemikiran dan imajinasi menjadi kata serta cerita.</p>
             </article>
             <article class="interest-card reveal">
-              <span class="interest-icon">◇</span>
+              <span class="interest-icon">
+                <iconify-icon icon="lucide:globe"></iconify-icon>
+              </span>
               <h4>Dunia Digital</h4>
               <p>Mengenal teknologi, kreativitas digital, dan internet.</p>
             </article>
             <article class="interest-card reveal">
-              <span class="interest-icon">∞</span>
+              <span class="interest-icon">
+                <iconify-icon icon="lucide:infinity"></iconify-icon>
+              </span>
               <h4>Pengembangan Diri</h4>
               <p>
                 Terus belajar dan bertumbuh menjadi versi diri yang lebih baik.
@@ -217,7 +237,7 @@
         <div class="social-grid">
           <article class="social-card tiktok reveal">
             <div class="social-top">
-              <div class="social-icon">♪</div>
+              <div class="social-icon"><iconify-icon icon="simple-icons:tiktok"></iconify-icon></div>
               <span class="social-number">01 / SOSIAL</span>
             </div>
             <div class="social-info">
@@ -238,7 +258,7 @@
 
           <article class="social-card instagram reveal">
             <div class="social-top">
-              <div class="social-icon">◎</div>
+              <div class="social-icon"><iconify-icon icon="simple-icons:instagram"></iconify-icon></div>
               <span class="social-number">02 / SOSIAL</span>
             </div>
             <div class="social-info">
@@ -257,7 +277,7 @@
 
           <article class="social-card wattpad reveal">
             <div class="social-top">
-              <div class="social-icon">W</div>
+              <div class="social-icon"><iconify-icon icon="simple-icons:wattpad"></iconify-icon></div>
               <span class="social-number">03 / KARYA</span>
             </div>
             <div class="social-info">
@@ -279,7 +299,7 @@
 
           <article class="social-card youtube reveal">
             <div class="social-top">
-              <div class="social-icon">▶</div>
+              <div class="social-icon"><iconify-icon icon="simple-icons:youtube"></iconify-icon></div>
               <span class="social-number">04 / SOSIAL</span>
             </div>
             <div class="social-info">
@@ -298,7 +318,7 @@
 
           <article class="social-card whatsapp reveal">
             <div class="social-top">
-              <div class="social-icon">◉</div>
+              <div class="social-icon"><iconify-icon icon="simple-icons:whatsapp"></iconify-icon></div>
               <span class="social-number">05 / KOMUNITAS</span>
             </div>
             <div class="social-info">
@@ -320,7 +340,7 @@
 
           <article class="social-card trakteer reveal">
             <div class="social-top">
-              <div class="social-icon">♡</div>
+              <div class="social-icon"><iconify-icon icon="lucide:heart-handshake"></iconify-icon></div>
               <span class="social-number">06 / DUKUNGAN</span>
             </div>
             <div class="social-info">
@@ -337,12 +357,6 @@
             >
           </article>
         </div>
-
-        <div class="social-footer reveal">
-          <span></span>
-          <p>ORANG YANG SAMA, RUANG YANG BERBEDA.</p>
-          <span></span>
-        </div>
       </section>
 
       <section class="contact section-pad" id="contact">
@@ -355,16 +369,16 @@
           </p>
           <div class="contact-actions">
             <a
-              href="mailto:youremail@example.com"
+              href="mailto:0tokodayo011@gmail.com"
               class="contact-button primary"
-              ><span>✉</span> Kirim email</a
+              ><span><iconify-icon icon="lucide:mail"></iconify-icon></span> Kirim email</a
             >
             <a
               href="https://wa.me/6288218032824"
               class="contact-button secondary"
               target="_blank"
               rel="noopener noreferrer"
-              ><span>◉</span> Chat melalui WhatsApp</a
+              ><span><iconify-icon icon="simple-icons:whatsapp"></iconify-icon></span> Chat melalui WhatsApp</a
             >
           </div>
           <div class="contact-divider"></div>
@@ -379,9 +393,7 @@
     </main>
 
     <footer class="site-footer">
-      <a href="#home" class="footer-brand">0tokodayo<span>.</span></a>
-      <p>Dirancang dengan rasa ingin tahu dan sedikit imajinasi.</p>
-      <span class="copyright">© 2026 0tokodayo. Hak cipta dilindungi.</span>
+      <span class="copyright">© 2026 0tokodayo.</span>
     </footer>
 
     <script src="script.js"></script>

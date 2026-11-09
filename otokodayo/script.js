@@ -9,7 +9,14 @@ if (themeToggle) {
     themeToggle.addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
         const modeTerang = document.body.classList.contains("light-mode");
-        themeToggle.textContent = modeTerang ? "☾" : "☼";
+        const ikonTema = themeToggle.querySelector("iconify-icon");
+
+        if (ikonTema) {
+            ikonTema.setAttribute(
+                "icon",
+                modeTerang ? "lucide:moon" : "lucide:sun"
+            );
+        }
         themeToggle.setAttribute(
             "aria-label",
             modeTerang ? "Aktifkan mode gelap" : "Aktifkan mode terang"

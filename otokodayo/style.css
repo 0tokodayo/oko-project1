@@ -186,7 +186,7 @@ button {
   position: relative;
 }
 
-.nav-menu a span {
+.nav-menu a iconify-icon {
   color: var(--emerald);
   font-size: 16px;
 }
@@ -833,7 +833,7 @@ button {
   transition: .25s ease;
 }
 
-.social-link span {
+.social-link iconify-icon {
   color: var(--social-color);
   font-size: 17px;
   transition: transform .25s ease;
@@ -1422,4 +1422,38 @@ body.light-mode .site-footer {
     opacity: 1;
     transform: none;
   }
+}
+
+/* =================================
+   ICONIFY - PENGATURAN IKON
+================================= */
+
+iconify-icon {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.interest-icon iconify-icon {
+  font-size: 21px;
+}
+
+.social-icon iconify-icon {
+  font-size: 23px;
+}
+
+.theme-btn iconify-icon {
+  font-size: 20px;
+}
+
+.contact-button iconify-icon {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
